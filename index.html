@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dev.Souza | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-dark custom-navbar sticky-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logosouza3.png" width="150" height="150" alt="Dev.Souza">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#hero" data-translate="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html" data-translate="projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#technologies" data-translate="skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services" data-translate="services">Services</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="more">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#about" data-translate="about">About</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank" data-translate="blog">Blog</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="https://github.com/LinuxEater/" target="_blank" data-translate="github">GitHub</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="budget.html" id="hire-me" class="btn btn-outline-success" data-translate="hire_me">HIRE ME</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="pt-5">
+            <div id="particles-js"></div>
+            <div class="bouncing-logo" data-aos="zoom-in">
+                <img src="images/logosouza1.png" width="50" height="50">
+            </div>
+            <div class="text-title" data-aos="fade-up" data-aos-duration="1000"><h1>Dev.Souza</h1></div>
+            <div class="text-title-sub" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <h2><span id="typewriter"></span></h2>
+            </div>
+            <div class="text-title-pa">
+                <p>Transforming ideas into exceptional digital experiences with clean code and modern design.</p>
+            </div>
+            <div class="creed-boxes">
+                <div class="creed-box"><p>Dedicated</p></div>
+                <div class="creed-box"><p>Punctual</p></div>
+                <div class="creed-box"><p>Transparent</p></div>
+                <div class="creed-box"><p>Committed</p></div>
+            </div>
+            <div class="btn-ctr"><a href="#contact">Get In Touch</a></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h1 data-aos="fade-up">About Me</h1>
+            <h2 data-aos="fade-up" data-aos-delay="100">Turning ideas into unique and engaging web experiences</h2>
+            <div class="about-section">
+                <div class="about-item" data-aos="fade-right">
+                    <h4>My Journey</h4>
+                    <p>I am Moisés Souza Santos, a Brazilian software engineer and full-stack developer...</p>
+                    <p>I value organization, clear communication, and innovative problem-solving...</p>
+                    <p>When I’m not coding or managing projects, I enjoy creative pursuits like Gaming...</p>
+                    <div class="about-small">
+                        <div class="box-item">
+                            <p>+100</p>
+                            <small>Completed Projects</small>
+                        </div>
+                        <div class="box-item">
+                            <p>+2</p>
+                            <small>Years of Experience</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="images/aboutimage.jpg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 data-aos="fade-up">My Services</h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">What I can do for you</p>
+            <div class="services-container">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern websites and applications with Django, React, and PostgreSQL.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces and experiences using Figma and modern design principles.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Consulting</h3>
+                    <p>Providing professional guidance to optimize your tech projects and digital strategies.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Mobile Development</h3>
+                    <p>Creating responsive and efficient mobile applications for iOS and Android platforms.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <h3>RPA Development</h3>
+                    <p>Automating repetitive tasks and processes using Robotic Process Automation technologies.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <h3>Bots & Chatbots Development</h3>
+                    <p>Building intelligent bots and chatbots to improve customer support and engagement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section id="technologies" class="py-5" style="text-align: center; color: #fff;">
+            <h2 class="mb-4" style="color: #00f7ff;" data-aos="fade-up">Skills</h2>
+            <div id="techCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in">
+                <div class="carousel-inner">
+                    <!-- Slides com imagens de tecnologias -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/python.png" alt="Python"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/django.png" alt="Django"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/javascript.png" alt="JavaScript"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/officel/80/react.png" alt="React"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/android-os.png" alt="React Native"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/node-js.png" alt="Node.js"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/angularjs.png" alt="Angular"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/html.png" alt="HTML"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/css3.png" alt="CSS"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/tailwind_css.png" alt="Tailwind"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <div class="tech-slide"><img src="https://img.icons8.com/color/48/postgreesql.png" alt="PostgreSQL"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/external-bearicons-gradient-bearicons/64/external-SQL-file-extension-bearicons-gradient-bearicons.png" alt="SQLite"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/mongo-db.png" alt="MongoDB"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/nolan/64/mysql.png" alt="MySQL"></div>
+                            <div class="tech-slide"><img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%) drop-shadow(0 0 6px #00f7ff);"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%) drop-shadow(0 0 6px #00f7ff);"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+    <section id="faq" class="py-5" style="background-color: #111827; color: #fff;">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #00f7ff; text-shadow: 0 0 8px rgba(0,247,255,0.5);" data-aos="fade-up" data-translate="faq">Frequently Asked Questions</h2>
+
+        <div class="accordion" id="faqAccordion">
+
+        <!-- Questão 1 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="accordion-header" id="faqHeading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1" data-translate="faq1_question">
+                What services do you offer?
+            </button>
+            </h2>
+            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="faq1_answer">
+                I provide web development, mobile development, RPA, bots and chatbots, and consulting services.
+            </div>
+            </div>
+        </div>
+
+        <!-- Questão 2 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="accordion-header" id="faqHeading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2" data-translate="faq2_question">
+                How can I hire you?
+            </button>
+            </h2>
+            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="faq2_answer">
+                You can contact me through the contact section below, and I will get back to you promptly.
+            </div>
+            </div>
+        </div>
+
+        <!-- Questão 3 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="accordion-header" id="faqHeading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3" data-translate="faq3_question">
+                Do you offer remote services?
+            </button>
+            </h2>
+            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="faq3_answer">
+                Yes! I work with clients worldwide via online communication and project management tools.
+            </div>
+            </div>
+        </div>
+
+        <!-- Questão 4 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="accordion-header" id="faqHeading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4" data-translate="faq4_question">
+                What payment methods do you accept?
+            </button>
+            </h2>
+            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="faq4_answer">
+                I accept Wise, PicPay, PagSeguro, Pix, and MercadoPago.
+            </div>
+            </div>
+        </div>
+
+        <!-- Questão 5 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+            <h2 class="accordion-header" id="faqHeading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5" data-translate="faq5_question">
+                Do you accept payment in installments?
+            </button>
+            </h2>
+            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="faq5_answer">
+                Yes! I accept 50% payment at the start and 50% at the end of the project. I also offer installment options if needed.
+            </div>
+            </div>
+        </div>
+
+        <!-- Questão 6 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+            <h2 class="accordion-header" id="faqHeading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6" data-translate="faq6_question">
+                What kind of support do you offer?
+            </button>
+            </h2>
+            <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="faq6_answer">
+                I provide full support during and after the project, including troubleshooting, maintenance, and updates.
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+
+    <section id="contact" class="py-5" style="background-color: #222; color: #fff; text-align: center;">
+    <div class="container">
+        <h2 class="mb-4" style="color: #00f7ff;" data-aos="fade-up" data-translate="contact_me">Contact Me</h2>
+
+        <div class="contact-card p-5 rounded" onclick="window.location.href='/contact-page';" data-aos="zoom-in" data-aos-delay="100">
+        <h3 style="color: #00f7ff;" data-translate="lets_work_together">Let's Work Together!</h3>
+        <p style="color: #e5e7eb;" data-translate="contact_text">Click here to go to the contact form and send me your project details.</p>
+        <a href="{% url 'budget' %}"><button class="btn btn-neon mt-3" data-translate="budget">Budget</button></a>
+        </div>
+    </div>
+    </section>
+
+        <!-- Footer e Scripts -->
+        <footer id="footer" class="site-footer py-4" style="background-color: #111827; color: #e5e7eb;">
+            <div class="container text-center">
+                <h3 style="color: #00f7ff; text-shadow: 0 0 8px rgba(0,247,255,0.5);" data-aos="fade-up">Dev.Souza</h3>
+                <ul class="footer-links list-unstyled d-flex justify-content-center gap-4 mt-3 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <li><a href="#about" class="footer-link" data-translate="about">About</a></li>
+                    <li><a href="#services" class="footer-link" data-translate="services">Services</a></li>
+                    <li><a href="#technologies" class="footer-link" data-translate="technologies">Technologies</a></li>
+                    <li><a href="#faq" class="footer-link" data-translate="faq">FAQ</a></li>
+                    <li><a href="#contact" class="footer-link" data-translate="contact">Contact</a></li>
+                </ul>
+                <div class="social-links mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://github.com/LinuxEater" target="_blank"><img src="images/github_icon.png" alt="GitHub" width="24" height="24"></a> |
+                    <a href="https://www.linkedin.com/in/mois%C3%A9s-souza-santos/" target="_blank"><img src="images/linkedin_icon.png" alt="LinkedIn" width="24" height="24"></a> |
+                    <a href="https://t.me/moisessoss" target="_blank"><img src="images/telegram_icon.png" alt="Telegram" width="24" height="24"></a> |
+                    <a href="https://wa.me/5538998189765" target="_blank"><img src="images/whatsapp_icon.png" alt="WhatsApp" width="24" height="24"></a> |
+                    <a href="https://www.instagram.com/moises123bbb/" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" width="24" height="24"></a>
+                </div>
+                <p style="font-size: 0.9rem;">&copy; 2025 Dev.Souza. All rights reserved.</p>
+                <p style="font-size: 0.9rem;">63.754.092/0001-15</p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/translations.js" defer></script>
+        <script src="js/script.js" defer></script>
+        <script src="js/particles.min.js" defer></script>
+        <script src="js/app.js" defer></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
+        <!-- Floating Button -->
+        <a href="projects.html" class="float-btn">
+            <span class="float-btn-tooltip">Veja meus principais projetos</span>
+            <i class="fa-solid fa-briefcase"></i>
+        </a>
+    </body>
+</html>
