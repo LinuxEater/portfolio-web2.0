@@ -239,6 +239,7 @@ html {
 
 .btn-ctr a{
     font-size: 1.5rem;
+    font-weight: bolder;
     filter: drop-shadow(4px 4px 10px rgb(17, 99, 231));
 }
 
@@ -807,13 +808,17 @@ html {
 }
 
 .social-links a {
-    color: #00f7ff;
+    color: var(--color-accent); /* Use a cor de destaque para os ícones */
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 10px; /* Ajuste o espaçamento entre os ícones */
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block; /* Garante que a transformação funcione */
 }
 
 .social-links a:hover {
-    color: #ffffff;
+    color: #ffffff; /* Cor branca no hover para destaque */
+    transform: translateY(-5px) scale(1.1); /* Efeito sutil no hover */
+    text-shadow: 0 0 8px rgba(0,247,255,0.7); /* Efeito neon no hover */
 }
 
 .site-footer {
@@ -1201,6 +1206,12 @@ html {
     filter: invert(100%); /* Ensure GitHub icon is white */
 }
 
+.project-buttons .btn-youtube i,
+.project-buttons .btn-github i {
+    margin-right: 8px; /* Add some space between icon and text */
+    color: #fff; /* Make icons white */
+}
+
 @media (max-width: 480px) {
     .project-buttons .btn {
         width: 100%;
@@ -1212,8 +1223,8 @@ html {
 /* Floating Button */
 .float-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px; /* Adjusted from 20px */
+    right: 50px;  /* Adjusted from 20px */
     width: 60px;
     height: 60px;
     background-color: var(--color-accent);
@@ -1222,7 +1233,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     z-index: 1000;
@@ -1242,18 +1253,19 @@ html {
 
 .float-btn-tooltip {
     visibility: hidden;
-    width: 180px;
+    width: 100px; /* Increased width to accommodate longer text */
     background-color: #333;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 8px 10px; /* Increased padding for better appearance */
     position: absolute;
     z-index: 1;
     bottom: 100%; /* Position the tooltip above the button */
     left: 50%;
-    margin-left: -90px; /* Center the tooltip */
+    margin-left: -110px; /* Adjusted to center with new width (half of new width) */
     opacity: 0;
+    white-space: normal; /* Ensure text wraps */
     transition: opacity 0.3s;
 }
 

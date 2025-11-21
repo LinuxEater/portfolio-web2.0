@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title data-translate="budget_title">Dev.Souza | Budget</title>
+        <title>Dev.Souza | Orçamento</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -16,6 +16,14 @@
         <link rel="stylesheet" href="css/style.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            .contact-icon-link {
+                transition: transform 0.3s ease;
+            }
+            .contact-icon-link:hover {
+                transform: scale(1.2);
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -31,30 +39,30 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html" data-translate="home">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="projects.html" data-translate="projects">Projects</a>
+                                <a class="nav-link" href="projects.html">Projetos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#technologies" data-translate="skills">Skills</a>
+                                <a class="nav-link" href="index.html#technologies">Habilidades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#services" data-translate="services">Services</a>
+                                <a class="nav-link" href="index.html#services">Serviços</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="more">
-                                    More
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mais
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="index.html#about" data-translate="about">About</a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank" data-translate="blog">Blog</a></li>
+                                    <li><a class="dropdown-item" href="index.html#about">Sobre</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank">Blog</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="https://github.com/LinuxEater/" target="_blank" data-translate="github">GitHub</a></li>
+                                    <li><a class="dropdown-item" href="https://github.com/LinuxEater/" target="_blank">GitHub</a></li>
                                 </ul>
                             </li>
                         </ul>
-                        <a href="budget.html" id="hire-me" class="btn btn-outline-success active" data-translate="hire_me">HIRE ME</a>
+                        <a href="budget.html" id="hire-me" class="btn btn-outline-success active">CONTRATE-ME</a>
                     </div>
                 </div>
             </nav>
@@ -65,50 +73,67 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
                         <div class="quote-card p-5 rounded" data-aos="zoom-in">
-                            <h2 class="text-center mb-4" style="color: #00f7ff;" data-translate="request_quote">Request a Quote</h2>
-                            <p class="text-center mb-5" style="color: #e5e7eb;" data-translate="quote_subtitle">Please fill out the form below with the details of your project. Include what features or functionality you want, your goals, and any other important information. You can also contact me directly, or I will reach out to you after receiving your request.</p>
+                            <h2 class="text-center mb-4" style="color: #00f7ff;">Solicite um Orçamento</h2>
+                            <p class="text-center mb-5" style="color: #e5e7eb;">Por favor, preencha o formulário abaixo com os detalhes do seu projeto. Inclua quais recursos ou funcionalidades você deseja, seus objetivos e qualquer outra informação importante. Você também pode me contatar diretamente, ou eu entrarei em contato com você após receber sua solicitação.</p>
         
-                            <form class="quote-form">
+                            <div class="contact-info-banner text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                                <h3 style="color: #00f7ff;">Ou Entre em Contato Diretamente</h3>
+                                <div class="d-flex justify-content-center gap-4 mt-3">
+                                    <a href="https://wa.me/5538998189765" target="_blank" class="contact-icon-link">
+                                        <i class="fab fa-whatsapp fa-2x" style="color: #25D366;"></i>
+                                    </a>
+                                    <a href="https://t.me/moisessoss" target="_blank" class="contact-icon-link">
+                                        <i class="fab fa-telegram fa-2x" style="color: #0088CC;"></i>
+                                    </a>
+                                    <a href="mailto:moisessouzasantos001@gmail.com" class="contact-icon-link">
+                                        <i class="fas fa-envelope fa-2x" style="color: #BB001B;"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=100011995308814" target="_blank" class="contact-icon-link">
+                                        <i class="fab fa-facebook fa-2x" style="color: #4267B2;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <form class="quote-form" action="budget_success.html">
                                 <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
-                                    <label for="fullName" class="form-label" data-translate="full_name">Full Name</label>
-                                    <input type="text" class="form-control" id="fullName" placeholder="John Doe" data-translate="john_doe_placeholder" required>
+                                    <label for="fullName" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
                                 </div>
                                 <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
-                                    <label for="emailAddress" class="form-label" data-translate="email_address">Email Address</label>
-                                    <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" data-translate="email_placeholder" required>
+                                    <label for="emailAddress" class="form-label">Endereço de Email</label>
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" required>
                                 </div>
                                 <div class="mb-3" data-aos="fade-up" data-aos-delay="300">
-                                    <label for="phone" class="form-label" data-translate="phone">Phone</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="+55 99999-9999" data-translate="phone_placeholder">
+                                    <label for="phone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="+55 99999-9999">
                                 </div>
                                 <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
-                                    <label for="projectType" class="form-label" data-translate="project_type">Project Type</label>
-                                    <select class="form-select" id="projectType" data-translate="select_project_type" required>
-                                        <option selected disabled value="">Select a project type</option>
-                                        <option value="web_development" data-translate="web_development">Web Development</option>
-                                        <option value="mobile_development" data-translate="mobile_development">Mobile Development</option>
-                                        <option value="ui_ux_design" data-translate="ui_ux_design">UI/UX Design</option>
-                                        <option value="rpa_development" data-translate="rpa_development">RPA Development</option>
-                                        <option value="bots_chatbots_development" data-translate="bots_chatbots_development">Bots & Chatbots Development</option>
-                                        <option value="consulting" data-translate="consulting">Consulting</option>
+                                    <label for="projectType" class="form-label">Tipo de Projeto</label>
+                                    <select class="form-select" id="projectType" required>
+                                        <option selected disabled value="">Selecione um tipo de projeto</option>
+                                        <option value="web_development">Desenvolvimento Web</option>
+                                        <option value="mobile_development">Desenvolvimento Mobile</option>
+                                        <option value="ui_ux_design">UI/UX Design</option>
+                                        <option value="rpa_development">Desenvolvimento RPA</option>
+                                        <option value="bots_chatbots_development">Desenvolvimento de Bots & Chatbots</option>
+                                        <option value="consulting">Consultoria</option>
                                     </select>
                                 </div>
                                 <div class="mb-3" data-aos="fade-up" data-aos-delay="500">
-                                    <label for="projectDetails" class="form-label" data-translate="project_details">Project Details</label>
-                                    <textarea class="form-control" id="projectDetails" rows="5" placeholder="Describe your project, desired features, and goals. You can also ask questions. I will review this and contact you." data-translate="project_details_placeholder" required></textarea>
+                                    <label for="projectDetails" class="form-label">Detalhes do Projeto</label>
+                                    <textarea class="form-control" id="projectDetails" rows="5" placeholder="Descreva seu projeto, funcionalidades desejadas e objetivos. Você também pode fazer perguntas. Irei analisar e entrar em contato." required></textarea>
                                 </div>
                                 <div class="mb-3" data-aos="fade-up" data-aos-delay="600">
-                                    <label for="estimatedBudget" class="form-label" data-translate="estimated_budget">Estimated Budget (Optional)</label>
-                                    <input type="text" class="form-control" id="estimatedBudget" placeholder="Ex: $500 - $1000" data-translate="budget_placeholder">
+                                    <label for="estimatedBudget" class="form-label">Orçamento Estimado (Opcional)</label>
+                                    <input type="text" class="form-control" id="estimatedBudget" placeholder="Ex: R$1000 - R$5000">
                                 </div>
                                 <div class="mb-3" data-aos="fade-up" data-aos-delay="700">
-                                    <label for="projectDeadline" class="form-label" data-translate="project_deadline">Project Deadline (Optional)</label>
+                                    <label for="projectDeadline" class="form-label">Prazo do Projeto (Opcional)</label>
                                     <input type="date" class="form-control" id="projectDeadline">
                                 </div>
                                 <div class="mb-4" data-aos="fade-up" data-aos-delay="800">
-                                    <label for="paymentMethod" class="form-label" data-translate="preferred_payment">Preferred Payment Method</label>
-                                    <select class="form-select" id="paymentMethod" data-translate="select_payment_method">
-                                        <option selected disabled value="">Select a payment method</option>
+                                    <label for="paymentMethod" class="form-label">Método de Pagamento Preferido</label>
+                                    <select class="form-select" id="paymentMethod">
+                                        <option selected disabled value="">Selecione um método de pagamento</option>
                                         <option value="wise">Wise</option>
                                         <option value="picpay">PicPay</option>
                                         <option value="pagseguro">PagSeguro</option>
@@ -117,7 +142,7 @@
                                     </select>
                                 </div>
                                 <div class="d-grid" data-aos="fade-up" data-aos-delay="900">
-                                    <button type="submit" class="btn btn-neon" data-translate="send_quote_request">Send Quote Request</button>
+                                    <button type="submit" class="btn btn-neon">Enviar Pedido de Orçamento</button>
                                 </div>
                             </form>
                         </div>
@@ -131,20 +156,21 @@
             <div class="container text-center">
                 <h3 style="color: #00f7ff; text-shadow: 0 0 8px rgba(0,247,255,0.5);" data-aos="fade-up">Dev.Souza</h3>
                 <ul class="footer-links list-unstyled d-flex justify-content-center gap-4 mt-3 mb-3" data-aos="fade-up" data-aos-delay="100">
-                    <li><a href="index.html#about" class="footer-link" data-translate="about">About</a></li>
-                    <li><a href="index.html#services" class="footer-link" data-translate="services">Services</a></li>
-                    <li><a href="index.html#technologies" class="footer-link" data-translate="technologies">Technologies</a></li>
-                    <li><a href="index.html#faq" class="footer-link" data-translate="faq">FAQ</a></li>
-                    <li><a href="index.html#contact" class="footer-link" data-translate="contact">Contact</a></li>
+                    <li><a href="index.html#about" class="footer-link">Sobre</a></li>
+                    <li><a href="index.html#services" class="footer-link">Serviços</a></li>
+                    <li><a href="index.html#technologies" class="footer-link">Tecnologias</a></li>
+                    <li><a href="index.html#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="index.html#contact" class="footer-link">Contato</a></li>
                 </ul>
-                <div class="social-links mb-3" data-aos="fade-up" data-aos-delay="200">
-                    <a href="https://github.com/LinuxEater" target="_blank"><img src="images/github_icon.png" alt="GitHub" width="24" height="24"></a> |
-                    <a href="https://www.linkedin.com/in/mois%C3%A9s-souza-santos/" target="_blank"><img src="images/linkedin_icon.png" alt="LinkedIn" width="24" height="24"></a> |
-                    <a href="https://t.me/moisessoss" target="_blank"><img src="images/telegram_icon.png" alt="Telegram" width="24" height="24"></a> |
-                    <a href="https://wa.me/5538998189765" target="_blank"><img src="images/whatsapp_icon.png" alt="WhatsApp" width="24" height="24"></a> |
-                    <a href="https://www.instagram.com/moises123bbb/" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" width="24" height="24"></a>
+                <div class="social-links mb-3 d-flex justify-content-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://github.com/LinuxEater" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/mois%C3%A9s-souza-santos/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://t.me/moisessoss" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+                    <a href="https://wa.me/5538998189765" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    <a href="https://www.instagram.com/moises123bbb/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011995308814" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
                 </div>
-                <p style="font-size: 0.9rem;">&copy; 2025 Dev.Souza. All rights reserved.</p>
+                <p style="font-size: 0.9rem;">&copy; 2025 Dev.Souza. Todos os direitos reservados.</p>
                 <p style="font-size: 0.9rem;">CNPJ: 63.754.092/0001-15</p>
             </div>
         </footer>
@@ -156,7 +182,6 @@
         <script src="js/script.js" defer></script>
         <script src="js/particles.min.js" defer></script>
         <script src="js/app.js" defer></script>
-        <script src="js/translations.js" defer></script>
         <script>
             AOS.init();
         </script>

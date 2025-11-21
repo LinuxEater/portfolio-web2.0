@@ -3,14 +3,14 @@ console.log("Script loaded");
 // Lista de papéis para o efeito de máquina de escrever
 
 const roles = [
-  "Software Engineer",
-  "Back-End Developer",
-  "Web Developer",
+  "Engenheiro de Software",
+  "Desenvolvedor Back-End",
+  "Desenvolvedor Web",
   "Web Designer",
   "UI/UX Designer",
-  "Front-End Developer",
-  "RPA Developer",
-  "Mobile Developer"
+  "Desenvolvedor Front-End",
+  "Desenvolvedor RPA",
+  "Desenvolvedor Mobile"
 ];
 
 let i = 0;
@@ -44,18 +44,3 @@ function typeWriter() {
 }
 
 document.addEventListener("DOMContentLoaded", typeWriter);
-
-// Set language to Portuguese
-function changeLanguage(lang) {
-    const elements = document.querySelectorAll('[data-translate]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        if (translations[lang] && translations[lang][key]) {
-            element.innerHTML = translations[lang][key];
-        }
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  changeLanguage('pt-br');
-});
